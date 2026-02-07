@@ -63,10 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
             try {
               DateTime date = DateTime.parse(rawDate).toLocal();
               return DateFormat('dd MMM yyyy').format(date);
-              // ถ้าอยากเป็นไทยใช้บรรทัดล่างแทน
-              // return DateFormat('d MMM y', 'th_TH').format(date);
+
             } catch (e) {
-              return rawDate; // ถ้าแปลงไม่ได้ แสดงค่าเดิม
+              return rawDate;
             }
           }
 
